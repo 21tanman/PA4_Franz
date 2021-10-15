@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/entireScreenBox"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingLeft="0dp"
+android:paddingRight="0dp"
+android:orientation="vertical"
+android:textSize="40px"
+    >
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:gravity="left"
+        >
+        <TextView
+            android:id="@+id/desiredLetterGradeText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:text="Desired Letter Grade:"
+            android:textSize="18sp"
+            />
+        <EditText
+            android:id="@+id/desiredLetterGradeInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:inputType="text"
+            android:hint="A,B,C,D,F"
+            android:layout_weight="3"
+            android:textSize="18sp"
+            android:padding="16dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:gravity="left"
+        android:textSize="180sp"
+        >
+        <TextView
+            android:id="@+id/currentAverageText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:text="Current Average:"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            />
+        <EditText
+            android:id="@+id/currentAverageInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:hint="@string/xx_x"
+            android:layout_weight="3"
+            android:inputType="numberDecimal"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:gravity="left"
+        >
+        <TextView
+            android:id="@+id/minimumAverageText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:text="Minimum Average required:"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            />
+        <EditText
+            android:id="@+id/minimumAverageInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:hint="XX.X"
+            android:layout_weight="3"
+            android:inputType="numberDecimal"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:gravity="left"
+        >
+        <TextView
+            android:id="@+id/finalExamWeightText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:text="Final Exam Grade Weight:"
+
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+        />
+        <EditText
+            android:id="@+id/finalExamWeightInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:hint="XX.X"
+            android:layout_weight="3"
+            android:inputType="numberDecimal"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:gravity="left"
+        >
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:textSize="18sp"
+            android:textColor="@color/VictoryBlue"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/finalPrologueBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            />
+        <TextView
+            android:id="@+id/finalPercentBox"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textSize="72sp"
+            />
+    </LinearLayout>
+</LinearLayout>
+
+<!--
+EXTRA CREDIT//COMPLETED!
+Make Grade Calculator Gonzaga themed in terms of its colors. Use the official color values specified from the GU “Spirited Palette”. Colors in the app to change include:
+(1 pt) Primary color, dark primary color, and accent color (set the color resources)
+(1 pt) GUI component text colors (use your color resources)
+(1 pt) “Calculate!” button text and background color (use your color resources)
+-->
+
+
+
+
